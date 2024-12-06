@@ -4,27 +4,167 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Proyectos"
-        tools:layout_editor_absoluteX="101dp"
+    <!-- ImageView con restricciones -->
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="31dp"
+        android:layout_height="21dp"
+        android:layout_constraintStart_toStartOf="parent"
+        android:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logo"
+        tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="106dp"
-        tools:layout_editor_absoluteY="95dp" />
+        android:layout_constraintStart_toStartOf="parent"
+        android:layout_constraintTop_toTopOf="parent"
+        android:text="Riondave"
+        tools:layout_editor_absoluteX="55dp"
+        tools:layout_editor_absoluteY="18dp" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_width="92dp"
-        android:layout_height="729dp"
-        tools:layout_editor_absoluteX="-2dp"
-        tools:layout_editor_absoluteY="1dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_constraintStart_toStartOf="parent"
+        android:layout_constraintTop_toTopOf="parent"
+        android:text="Proyectos"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="103dp" />
+
+    <TextView
+        android:id="@+id/proyecto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_constraintStart_toStartOf="parent"
+        android:layout_constraintTop_toTopOf="parent"
+        android:text="Proyectos"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="174dp"
+        tools:layout_editor_absoluteY="13dp" />
+
+    <TextView
+        android:id="@+id/usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_constraintStart_toStartOf="parent"
+        android:layout_constraintTop_toTopOf="parent"
+        android:text="Usuarios"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="13dp" />
+
+    <TextView
+        android:id="@+id/perfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_constraintStart_toStartOf="parent"
+        android:layout_constraintTop_toTopOf="parent"
+        android:text="Perfil"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="343dp"
+        tools:layout_editor_absoluteY="13dp" />
+
+
+    <!-- aqui estan los proyectos 1 -->
+    <LinearLayout
+        android:id="@+id/containerProyecto"
+        android:layout_width="379dp"
+        android:layout_height="176dp"
+        android:layout_constraintBottom_toBottomOf="parent"
+        android:layout_constraintEnd_toEndOf="parent"
+        android:layout_constraintStart_toStartOf="parent"
+        android:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="176dp">
+
+
+        <!-- Nombre del proyecto -->
+        <TextView
+            android:id="@+id/textViewProyecto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Nombre de proyecto"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <!-- Descripcion -->
+        <TextView
+            android:id="@+id/textViewDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Descripción del proyecto"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Fecha de inicio -->
+        <TextView
+            android:id="@+id/textViewFecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de inicio"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <!-- aqui estan los proyecto2 -->
+    <LinearLayout
+        android:id="@+id/containerProyecto2"
+        android:layout_width="379dp"
+        android:layout_height="176dp"
+        android:layout_constraintBottom_toBottomOf="parent"
+        android:layout_constraintEnd_toEndOf="parent"
+        android:layout_constraintStart_toStartOf="parent"
+        android:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="16dp"
+        android:background="@android:color/black"
+        android:orientation="vertical"
+        android:padding="16dp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="399dp">
+
+
+        <!-- Nombre del proyecto -->
+        <TextView
+            android:id="@+id/textViewProyecto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Nombre de proyecto"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <!-- Descripcion -->
+        <TextView
+            android:id="@+id/textViewDescripcion2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Descripción del proyecto"
+            android:textColor="@android:color/white"
+            android:textSize="18sp" />
+
+        <!-- Fecha de inicio -->
+        <TextView
+            android:id="@+id/textViewFecha2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fecha de inicio"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
